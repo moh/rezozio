@@ -1,0 +1,630 @@
+/* general style for body and html */
+body{
+    margin: 0px;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* 
+------------------------
+Style for header 
+------------------------
+*/
+
+header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+
+    background-color: white;
+    border-bottom: 1px solid #a8a8a8;
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 10;
+}
+
+/* loading text style */
+
+#loading{
+    display: block;
+    position: fixed;
+    left: 47%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffffcf;
+}
+
+/* logo Name part */
+
+#logoName{
+    margin-left: 10px;
+}
+
+#logo{
+    height: 50px;
+}
+
+#brandName{
+    font-size: 25px;
+    margin: 10px;
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+    color: #515151;
+}
+
+
+/* Right header part, the account related part  */
+#accountPart{
+    display: flex;
+}
+
+#homePict{
+    height: 50px;
+    cursor: alias;
+}
+
+
+#deConnectedHeader{
+   color : #2e353c;
+   font-style: italic;
+   cursor: alias;
+   margin: auto;
+}
+
+#deConnectedHeader:hover {
+    color : #626262;
+
+}
+
+/* case user is connected header */
+#connectedHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+#sendMessage{
+    height: 50px;
+    margin : 0px 10px;
+}
+
+#sendMessage:hover{
+    cursor: alias;
+}
+
+#userName{
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    cursor : alias;
+}
+
+#userName:hover{
+    color: gray;
+}
+
+#profilePicHead{
+    width: 48px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+#logout{
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    cursor: alias;
+}
+
+
+/*
+------------------------
+*/
+
+/*
+ CONTENT PART STYLE
+*/
+
+#contentPart{
+    display: flex;
+    flex-direction: row;
+    padding-top : 60px;
+}
+
+
+/*
+
+============================================================
+    left section style
+============================================================
+
+*/
+#leftSection{
+    width: 20%;
+    min-width: 300px;
+    border-right: 1px solid lightgray;
+}
+
+#leftSectionContent{
+    padding:30px;
+}
+
+#leftSectionContent #authorSubName{
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#authorOptions{
+    height: 0px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+
+#authorOptions .rezozioUser{
+    justify-content: flex-start;
+}
+
+#authorOptions .pseudoName{
+    position: relative;
+    margin-left: 10px;
+}
+
+#authorOptions .pseudoFollow{
+    font-size: 15px;
+}
+
+#authorOptions .userIdFollow{
+    font-size: 10px;
+}
+
+
+#credit{
+    position: fixed;
+    bottom: 50px;
+    margin-left: 10px;
+}
+
+#webCreator{
+    position: fixed;
+    bottom: 10px;
+    margin-left: 10px;
+}
+
+
+/*
+
+============================================================
+    right section style
+============================================================
+
+*/
+
+#rightSection{
+    width: 10%;
+}
+
+/*
+
+============================================================
+    Middle section style
+============================================================
+
+*/
+#middleSection{
+    width: 70%;
+}
+
+/* 
+
+Profile section
+
+Inside middle Section
+
+*/
+
+#profileSection{
+    margin: auto;
+    width: max-content;
+    padding: 10px;
+}
+
+/* 
+
+============================================================
+    loginForm style inside profile section 
+============================================================
+
+*/
+
+#loginForm{
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+#loginForm input{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#loginForm label{
+    display: block;
+
+}
+
+#loginForm form{
+    margin-bottom: 10px;
+}
+
+#inscrir{
+    cursor: alias;
+}
+
+#inscrir:hover{
+    color : #626262;
+}
+
+/*
+
+============================================================
+    Creat user style 
+============================================================
+
+*/
+
+#creatUserForm{
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+
+#creatUserForm input{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#creatUserForm label{
+    display: block;
+
+}
+
+#creatUserForm form{
+    margin-bottom: 10px;
+}
+
+/* 
+
+============================================================
+    update user data Section 
+============================================================
+
+*/
+
+#changeImage{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#profilePicUser{
+    height: 256px;
+    width: 256px;
+}
+
+#changeImage form{
+    padding: 30px;
+}
+
+#inputFile{
+    display: none
+}
+
+#changeImage form label{
+    display: block;
+    padding: 10px;
+    background-color: #dfdddd;
+    cursor: alias;
+}
+
+#changeImage form label:hover{
+    color: white;
+    background-color: gray;
+}
+
+#changeImage form button{
+    position: relative;
+    bottom: -100px;
+}
+
+#updateProfileForm textarea{
+    display: block;
+    width: 280px;
+    resize: none;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0px;
+
+}
+
+#updateProfileMsg {
+    width : 300px;
+}
+
+#updateProfileForm button{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+#changeImage button{
+    width: 150px;
+}
+
+/*
+-----------------------------------------
+show followers and following user style 
+-----------------------------------------
+*/
+
+#currentUserSubscriptions{
+    margin: 10px 0px;   
+}
+
+#showFollowedPeople, #showFollowerPeople{
+    padding: 10px;
+    display: block;
+    width: 280px;
+    font-size: 20px;
+    cursor: alias;
+    margin-bottom: 10px;
+    background-color: #dfdddd;
+}
+
+#showFollowedPeople:hover, #showFollowerPeople:hover{
+    color: white!important;
+    background-color: gray!important;
+}
+
+#listFollowedPeople, #listFollowerPeople{
+    display: none;
+    width: 280px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.followedUser, .followerUser, .rezozioUser{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+}
+
+.followedUser img, .followerUser img{
+    height: 48px;
+    cursor: alias;
+    border-radius: 50%;
+}
+
+.pseudoName{
+    position: absolute;
+    margin-left: 60px;
+    cursor: alias;
+}
+
+.pseudoName:hover{
+    color: gray;
+}
+
+.pseudoFollow{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.userIdFollow{
+    font-size: 13px;
+    display: block;
+}
+
+.FollowStatus{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    height: min-content;
+    margin: auto 0px;
+    cursor: alias;
+}
+
+.FollowStatus:hover{
+    color: white;
+    background-color: gray;
+}
+
+
+
+/*
+==========================================================
+   Publish message part
+==========================================================
+*/
+#publishMessage{
+    padding: 10px;
+    border: 1px solid #acacac;
+}
+
+#publishMessage p{
+    text-align: center;
+    padding: 10px;
+    background-color: silver;
+}
+
+#form_publish_message textarea{
+    display: block;
+    margin: 10px 0px;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+}
+
+/*
+
+============================================================
+    Show other user profile
+============================================================
+
+*/
+
+#profileHead{
+    display: flex;
+}
+
+
+#profilePicOther{
+    height: 256px;
+}
+
+#rightHeadSection{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#showPseudo{
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#showUserId{
+    display: block;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#followRelation{
+    margin-top : 100px;
+}
+
+#showDescription{
+    width: 450px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+/**
+============================================================
+Message Show design
+============================================================
+**/
+
+#listMessages{
+    min-width: 400px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+
+.message{
+    padding: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.rezozioUser{
+    background-color: white;
+}
+
+.publishInfo{
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    color: #484848;
+    font-style: italic;
+}
+
+.messageContent{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#showMore{
+    cursor: pointer;
+}
+
+#showMore:hover{
+    color: #595959;
+}
+
+/*** 
+============================================================
+    Errors and success boxes styles 
+============================================================
+***/
+
+.errors, .success{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.errors{
+    background-color: lightcoral;
+}
+
+.success{
+    background-color: #bfffbf;
+}
+
+/**
+============================================================
+    General style
+============================================================
+
+**/
+input[type=text], input[type=password] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+
+  /* style for buttons */
+
+  button{
+      cursor: alias;
+      width: 100%;
+      height: 40px;
+      border: none;
+      padding: 10px;
+      background-color: lightgray;
+  }
+
+  button:hover{
+      opacity: 0.8;
+  }
